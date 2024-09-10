@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato Barbearia</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <body>
+        <header>
+            <fieldset class="caixa">
+                <h1>
+                    <a href="index.html">
+                        <img src="produtos/logo.png" alt="Logo Barbearia Theozin"></h1>
+                    </a>   
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for ="nomesobrenome">Nome e sobrenome <span style="font-size: 15px; color: red;"> *</label>
+                <input type ="text" id ="nomesobrenome" class="input-padrao" required>
+                
+                <label for ="email">Email<span style="font-size: 15px; color: red;"> *</label>
+                <input type ="email" id ="email" class="input-padrao" required placeholder="exemplo@dominio.com">
+                
+                <label for ="tel">Telefone Celular<span style="font-size: 15px; color: red;"> *</label>
+                <input type ="tel" id ="tel" class="input-padrao" required placeholder="(+00) 00 000000000">
+
+                <label for ="mensagem">Mensagem<span style="font-size: 15px; color: red;"> *</label>
+                <textarea cols ="70" rows ="10" id ="mensagem" class="input-padrao" required></textarea>
+
+                <fieldset>
+                    <legend>Como legendrefere o nosso contato</legend>
+                    <label for="radio-email"><input type ="radio" name="contato" value="E-mail" id="radio-email" checked> E-mail</label>
+                    
+                    
+                    <label for="ligacao"><input type="radio" name="contato" value="Ligação" id="ligacao"> Ligação</label>
+                    
+
+                    <label for="radio-mensagem"><input type="radio" name="contato" value="whatsapp" id="radio-mensagem"> Whatsapp</label>
+                    
+                
+                </fieldset>
+
+                <fieldset>
+                    <p>Qual horário prefere ser atendido</p>
+                    <select required>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                        <option>Qualquer horário</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type = "checkbox" checked>Gostaria de receber novidades por e-mail</label>
+
+                <input type ="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 16h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Terça</td>
+                        <td>8h ~ 16h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 16h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Quinta</td>
+                        <td>8h ~ 16h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 14h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="produtos/logo-branco.png" alt="Logo Barbearia Theozin">
+            <p class="copyrights">&copy; Copyright Theozin - 2024
+        </footer>
+    </body>
+</html>
